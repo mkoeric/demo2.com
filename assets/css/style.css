@@ -300,10 +300,10 @@ li {
 	padding: 2.5em 0;
 	font-size: 1.15em;
     
-	-webkit-transform: translate3d(-320px,0,0);
-	-moz-transform: translate3d(-320px,0,0);
-	-o-transform: translate3d(-320px,0,0);
-	transform: translate3d(-320px,0,0);
+	-webkit-transform: translate3d(-350px,0,0);
+	-moz-transform: translate3d(-350px,0,0);
+	-o-transform: translate3d(-350px,0,0);
+	transform: translate3d(-350px,0,0);
     
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -webkit-transform 0.4s;
@@ -460,6 +460,9 @@ li {
 .header {
     text-align: center;
     color: #fff;
+}
+
+.container1 {
     background-attachment: scroll;
     background-image: url(../images/banner.jpg);
     background-position: center center;
@@ -468,6 +471,19 @@ li {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 100vh
+}
+
+.container2 {
+    background-attachment: scroll;
+    background-image: url(../images/haut-bailly-grapes.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh
 }
 
 .intro-text {
@@ -475,7 +491,7 @@ li {
     padding: 20% 0 15% 0;
 }
 
-.header .intro-text h1 {    
+.header .intro-text h1 {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -523,7 +539,8 @@ li {
 /*---------------------------------------------------------*/
 
 .about-us-section-1 {
-    padding-top: 100px;
+    position: relative;
+    padding-top: 20px;
     padding-bottom: 120px;
     background-color: #f1f1f1;
 }

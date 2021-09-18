@@ -106,6 +106,22 @@ $(document).ready(function() {
 });
 
 
+////------- Partner/CLients
+
+$(document).ready(function() {
+
+    $(".galery").owlCarousel({
+        stopOnHover: true,
+        items:1,
+        autoPlay: 2500,
+        slideSpeed : 2500,
+        transitionStyle : "fade",
+    });
+
+
+
+});
+
 
 
 
@@ -170,14 +186,23 @@ $ ( function () {
 		if (isOpen) {
 			classie.remove(bodyEl, 'show-menu');
 		}
-		    else {
-                classie.add(bodyEl, 'show-menu');
-		    }
+        else {
+            classie.add(bodyEl, 'show-menu');
+        }
         
 		isOpen = !isOpen;
 	}
 
 	init();
+    $(document).click((event) => {
+        if ($('div.menu-wrap').has($(event.target)).length <= 0
+            && event.target != $('#open-button').get(0)
+            && $('body').hasClass('show-menu')
+        ) {
+            toggleMenu();
+        }
+
+    });
 
 })();
 
